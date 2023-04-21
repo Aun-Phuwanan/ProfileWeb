@@ -1,18 +1,24 @@
 <template>
   <div class="w-full relative">
-    <img src="~/assets/img/hero_bg.png" alt="bg" class="w-full" />
-    <div class="px-4">
+    <img
+      src="~/assets/img/hero_bg.png"
+      alt="hero_bg"
+      class="w-full xl:object-none xl:h-[500px]"
+    />
+    <div class="px-4 xl:max-w-[1280px] mx-auto">
       <div
         class="flex flex-col items-center backdrop-blur-md bg-white/75 rounded-xl shadow-md -translate-y-20"
       >
-        <div
-          class="bg-red-500 w-[150px] h-[150px] rounded-full shadow-md -translate-y-16"
-        ></div>
-        <p class="-mt-12 text-2xl font-mono font-bold text-gray-700">
+        <img
+          src="~/assets/img/profile.png"
+          alt="profile"
+          class="w-[150px] h-[150px] rounded-full shadow-md -translate-y-16"
+        />
+        <p class="-mt-12 text-gray-700 Catamaran__Bold24">
           Phuwanan Noiwaengpim
         </p>
         <p
-          class="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mt-2"
+          class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mt-2 Catamaran__Medium18"
         >
           Bueng Kal, Thailand
         </p>

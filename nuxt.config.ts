@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       extensions: [".vue"],
     },
   ],
-  css: ["~/assets/css/main.scss"],
+  css: ["~/assets/css/main.scss", "~/assets/css/fonts.scss"],
   pwa: {
     /* PWA options */
     registerType: "autoUpdate",

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Catamaran-Bold";
+  src: url("~/assets/font/Catamaran-Bold.ttf");
+}
+@font-face {
+  font-family: "Catamaran-Medium";
+  src: url("~/assets/font/Catamaran-Medium.ttf");
+}
+@font-face {
+  font-family: "Catamaran-Regular";
+  src: url("~/assets/font/Catamaran-Regular.ttf");
+}
+
+.Catamaran__Bold24 {
+  font-family: "Catamaran-Bold";
+  font-size: 24px;
+  line-height: 2rem;
+}
+
+.Catamaran__Bold16 {
+  font-family: "Catamaran-Bold";
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.Catamaran__Medium18 {
+  font-family: "Catamaran-Medium";
+  font-size: 18px;
+  line-height: 1.75rem;
+}
+
+.Catamaran__Regular16 {
+  font-family: "Catamaran-Regular";
+  font-size: 16px;
+  line-height: 1.5rem;
+}
