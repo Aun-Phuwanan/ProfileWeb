@@ -1,6 +1,6 @@
 <template>
   <div class="w-full relative">
-    <img src="bg.png" alt="bg" class="w-full" />
+    <img src="~/assets/img/hero_bg.png" alt="bg" class="w-full" />
     <div class="px-4">
       <div
         class="flex flex-col items-center backdrop-blur-md bg-white/75 rounded-xl shadow-md -translate-y-20"
@@ -17,12 +17,16 @@
           Bueng Kal, Thailand
         </p>
         <div class="w-full flex justify-around py-7">
-          <img src="react_logo.png" alt="react_logo" class="w-10 h-10" />
+          <img
+            src="~/assets/img/react_logo.png"
+            alt="react_logo"
+            class="w-10 h-10"
+          />
 
-          <img src="Vue_Log.png" alt="Vue_Log" class="w-10 h-10" />
+          <img src="~/assets/img/Vue_Log.png" alt="Vue_Log" class="w-10 h-10" />
 
           <img
-            src="Typescript_logo.png"
+            src="~/assets/img/Typescript_logo.png"
             alt="Typescript_logo "
             class="w-10 h-10"
           />
