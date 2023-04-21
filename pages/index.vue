@@ -14,9 +14,7 @@
           alt="profile"
           class="w-[150px] h-[150px] rounded-full shadow-md -translate-y-16"
         />
-        <p class="-mt-12 text-gray-700 Catamaran__Bold24">
-          Phuwanan Noiwaengpim
-        </p>
+        <p class="-mt-12 Catamaran__Bold24">Phuwanan Noiwaengpim</p>
         <p
           class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mt-2 Catamaran__Medium18"
         >

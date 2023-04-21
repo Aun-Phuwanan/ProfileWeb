@@ -8,11 +8,16 @@
 }
 
 body {
+  @apply text-gray-700;
   background: #f6f9ff;
   font-family: "Catamaran-Regular";
   font-size: 16px;
   line-height: 1.5rem;
   cursor: default;
+}
+.dark-mode body {
+  // @apply text-white;
+  background-color: #091a28;
 }
 
 .center {
