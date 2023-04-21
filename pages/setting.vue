@@ -62,6 +62,7 @@ import {
 // const { locale } = useI18n();
 const { locale, locales, setLocale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
+// const localeRoute = useLocaleRoute();
 const availableLocales = computed(() => {
   return locales.value.filter((i) => i.code);
 });

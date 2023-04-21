@@ -31,6 +31,11 @@ export default defineNuxtConfig({
     // lazy: true,
     langDir: "./lang",
     defaultLocale: "en",
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true,
+      cookieCrossOrigin: true,
+    },
     // strategy: "prefix_except_default",
   },
   pwa: {
