@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "li1": "Home",
+    "li2": "Setting"
+  },
+  "setting": {
+    "mode": "Night Mode",
+    "color_mode": {
+      "auto": "Auto",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "lang": "Language"
+  }
+}

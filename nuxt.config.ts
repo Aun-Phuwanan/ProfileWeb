@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@vite-pwa/nuxt", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  modules: [
+    "@vite-pwa/nuxt",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/i18n",
+  ],
   components: [
     {
       path: "~/components",
@@ -8,6 +13,26 @@ export default defineNuxtConfig({
     },
   ],
   css: ["~/assets/css/main.scss", "~/assets/css/fonts.scss"],
+  i18n: {
+    locales: [
+      {
+        code: "en",
+        file: "en-US.json",
+      },
+      // {
+      //   code: "fr",
+      //   file: "fr-FR.json",
+      // },
+      {
+        code: "th",
+        file: "th-TH.json",
+      },
+    ],
+    // lazy: true,
+    langDir: "./lang",
+    defaultLocale: "en",
+    // strategy: "prefix_except_default",
+  },
   pwa: {
     /* PWA options */
     registerType: "autoUpdate",
@@ -44,8 +69,6 @@ export default defineNuxtConfig({
     // },
     client: {
       installPrompt: true,
-      // you don't need to include this: only for testing purposes
-      // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
       periodicSyncForUpdates: 20,
     },
     devOptions: {
