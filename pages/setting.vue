@@ -3,35 +3,28 @@
     <div
       class="flex items-center gap-x-2 p-4 backdrop-blur-md bg-white/75 rounded-xl shadow-md"
     >
-      {{ colorMode }}
       <p class="Catamaran__Medium18">Color mode:</p>
-      <!-- {{ $colorMode.value }} -->
-      <!-- <button
+      <button
         v-if="$colorMode.preference == 'dark'"
-        onclick="$colorMode.preference ='system'"
-        class="flex items-center gap-x-2 border border-gray-700 p-2 rounded-md Catamaran__Medium18"
+        @click="$colorMode.preference = 'system'"
+        class="Catamaran__Medium18"
       >
         Auto <ComputerDesktopIcon class="w-6 h-6" />
       </button>
       <button
         v-if="$colorMode.preference == 'system'"
-        onclick="$colorMode.preference ='light'"
-        class="flex items-center gap-x-2 border border-gray-700 p-2 rounded-md Catamaran__Medium18"
+        @click="$colorMode.preference = 'light'"
+        class="Catamaran__Medium18"
       >
         Light <SunIcon class="w-6 h-6" />
       </button>
       <button
         v-if="$colorMode.preference == 'light'"
-        onclick="$colorMode.preference ='dark'"
-        class="flex items-center gap-x-2 border border-gray-700 p-2 rounded-md Catamaran__Medium18"
+        @click="$colorMode.preference = 'dark'"
+        class="Catamaran__Medium18"
       >
         Dark <MoonIcon class="w-6 h-6" />
-      </button> -->
-      <!-- <select v-model="$colorMode.preference">
-        <option value="system">System</option>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-      </select> -->
+      </button>
     </div>
   </div>
 </template>
@@ -46,6 +39,11 @@ import {
   SunIcon,
   MoonIcon,
 } from "@heroicons/vue/24/solid";
-// colorMode = useColorMode();
+const colorMode = useColorMode();
 // console.log(colorMode.preference);
 </script>
+<style scoped>
+button {
+  @apply flex items-center gap-x-2 border border-gray-700 p-2 rounded-md shadow-md;
+}
+</style>
