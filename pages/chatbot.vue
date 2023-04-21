@@ -131,6 +131,7 @@ async function sendMessage() {
   box-sizing: border-box;
 }
 .chat-panel {
+  @apply pb-3;
   position: relative;
   height: 100%;
   overflow-y: auto;
