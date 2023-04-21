@@ -20,6 +20,7 @@
     "sass-loader": "10"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.0.17"
+    "@heroicons/vue": "^2.0.17",
+    "openai": "^3.2.1"
   }
 }

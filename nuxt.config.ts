@@ -13,6 +13,13 @@ export default defineNuxtConfig({
     },
   ],
   css: ["~/assets/css/main.scss", "~/assets/css/fonts.scss"],
+  runtimeConfig: {
+    openaiApiKey: "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",
+    public: {
+      appTitle: "ChatFriend",
+      appMuted: process.env.NUXT_PUBLIC_APP_NOVOICE === "true" || false,
+    },
+  },
   i18n: {
     locales: [
       {
@@ -31,6 +38,7 @@ export default defineNuxtConfig({
     // lazy: true,
     langDir: "./lang",
     defaultLocale: "en",
+    skipSettingLocaleOnNavigate: true,
     detectBrowserLanguage: {
       useCookie: true,
       alwaysRedirect: true,
