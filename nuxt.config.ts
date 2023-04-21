@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@vite-pwa/nuxt"],
+  modules: ["@vite-pwa/nuxt", "@nuxtjs/tailwindcss"],
+  components: [
+    {
+      path: "~/components",
+      extensions: [".vue"],
+    },
+  ],
+  css: ["~/assets/css/main.scss"],
   pwa: {
     /* PWA options */
     registerType: "autoUpdate",
