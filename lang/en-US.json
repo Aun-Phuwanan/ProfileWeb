@@ -3,6 +3,10 @@
     "li1": "Home",
     "li2": "Setting"
   },
+  "chat": {
+    "type": "Write message...",
+    "send": "Send"
+  },
   "setting": {
     "mode": "Night Mode",
     "color_mode": {

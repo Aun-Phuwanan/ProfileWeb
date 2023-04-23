@@ -58,8 +58,6 @@ import {
   SunIcon,
   MoonIcon,
 } from "@heroicons/vue/24/solid";
-// const colorMode = useColorMode();
-// const { locale } = useI18n();
 const { locale, locales, setLocale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 // const localeRoute = useLocaleRoute();

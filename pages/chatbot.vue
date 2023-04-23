@@ -21,7 +21,6 @@ function scrollToBottom() {
 
 function handleKeyDown(event) {
   if (inputMessage.value.length > 140) {
-    // twitter old char limit
     inputMessage.value = inputMessage.value.substr(0, 140);
     event.preventDefault();
   }
@@ -87,14 +86,14 @@ async function sendMessage() {
             v-on:keyup.enter="sendMessage"
             @keydown="handleKeyDown($event)"
             v-model="inputMessage"
-            placeholder="Write message..."
+            :placeholder="$t('chat.type')"
           ></textarea>
           <button
             class="button-send"
             @click="sendMessage"
             :disabled="!inputMessage"
           >
-            Send
+            {{ $t("chat.send") }}
           </button>
         </div>
       </div>
@@ -180,7 +179,7 @@ async function sendMessage() {
 }
 
 .button-send {
-  @apply backdrop-blur-md bg-white/75 shadow-lg px-6 py-4 rounded-xl -translate-y-4;
+  @apply backdrop-blur-md bg-white/75 shadow-lg w-[81.41px] py-4 rounded-xl -translate-y-4;
 
   outline: none;
 }

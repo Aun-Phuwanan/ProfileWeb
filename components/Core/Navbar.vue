@@ -25,10 +25,17 @@
       <ChatBubbleBottomCenterIcon class="w-8 h-8 text-[#9B5AB4]" />
       <p class="mt-1 max-xl:hidden Catamaran__Bold16">Chat Bot</p>
     </NuxtLink>
-    <!-- <button class="max-xl:w-full h-full center gap-x-2">
-      <BellAlertIcon class="w-8 h-8 text-[#9B5AB4]" />
-      <p class="mt-1 max-xl:hidden Catamaran__Bold16">Alert</p>
-    </button> -->
+    <NuxtLink
+      :to="localeRoute('/news')"
+      class="max-xl:w-full h-full center gap-x-2"
+      :class="{
+        'max-xl:border-t-4 max-xl:border-[#9B5AB4] max-xl:bg-gradient-to-b from-[#ebdcf1] to-white':
+          route.fullPath == '/news' || route.fullPath == '/th/news',
+      }"
+    >
+      <NewspaperIcon class="w-8 h-8 text-[#9B5AB4]" />
+      <p class="mt-1 max-xl:hidden Catamaran__Bold16">News</p>
+    </NuxtLink>
     <NuxtLink
       :to="localeRoute('/setting')"
       class="max-xl:w-full h-full center gap-x-2"
@@ -46,7 +53,7 @@
 import {
   HomeIcon,
   ChatBubbleBottomCenterIcon,
-  BellAlertIcon,
+  NewspaperIcon,
   Cog8ToothIcon,
 } from "@heroicons/vue/24/solid";
 const route = useRoute();

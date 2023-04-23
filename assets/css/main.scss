@@ -19,6 +19,17 @@ body {
   // @apply text-white;
   background-color: #091a28;
 }
+::-webkit-scrollbar {
+  display: none !important;
+}
+.scroll {
+  -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
+  scrollbar-width: none !important;
+  overflow-x: scroll !important;
+}
+.scroll::-webkit-scrollbar {
+  display: none !important; /* for Chrome, Safari, and Opera */
+}
 
 .center {
   @apply flex justify-center items-center;
